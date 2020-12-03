@@ -41,4 +41,4 @@ if __name__ == '__main__':
     
     df['valid'] = df.apply(lambda x: validate_password_new_policy(x.password, x.character, x.position_1-1, x.position_2-1), axis=1)
     
-    print('Part 2 Solution: {}'.format(df['valid'].sum()))
+    print('Part 2 Solution: {}\n'.format(df['valid'].sum()))

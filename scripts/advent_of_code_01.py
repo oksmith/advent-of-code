@@ -19,6 +19,6 @@ if __name__ == '__main__':
         if 2020-entry1-entry2 in entries and entry1 >= entry2 and entry2 >= (2020-entry1-entry2)
     ]
     
-    print('Part 2 Solution: {}'.format(solutions_2[0]))
+    print('Part 2 Solution: {}\n'.format(solutions_2[0]))
     if len(solutions_2) > 1:
         print('WARNING! More than 1 solution: {}.'.format(solutions_2))
