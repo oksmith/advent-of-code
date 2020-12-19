@@ -52,6 +52,10 @@ if __name__ == '__main__':
         Counter([message_match(x, rules, rule_num=0) for x in messages])[True]
     ))
     
+    rules = data[0].split('\n').replace(REPLACE_DICT)
+    rules = {x.split(': ')[0]: x.split(': ')[1] for x in rules}
+    rules = {int(k): v.strip('"').split('|') for k, v in rules.items()}
+    
     print('Part 2 Solution: {}\n'.format(
         None
     ))
