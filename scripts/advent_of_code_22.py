@@ -4,7 +4,7 @@ import copy
 CARDS = 'inputs/22_input.txt'
 
 
-class CombatCards:
+class CombatCards(object):
     def __init__(self, p1_cards, p2_cards):
         self.p1_cards = copy.deepcopy(p1_cards)
         self.p2_cards = copy.deepcopy(p2_cards)

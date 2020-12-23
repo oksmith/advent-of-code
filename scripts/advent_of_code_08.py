@@ -1,7 +1,7 @@
 GAMEBOY_CODE = 'inputs/08_input.txt'
 
 
-class GameBoy:
+class GameBoy(object):
     def __init__(self, startup_commands):
         self.accumulator = 0
         self.loop_number = 0

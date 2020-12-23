@@ -5,7 +5,7 @@ from collections import deque
 INITIAL_CUP_ORDER = 598162734
 
 
-class CrabCups:
+class CrabCups(object):
     def __init__(self, inital_cup_order, number_of_cups=None):
         self.cups = deque(map(int, str(inital_cup_order)))
         self.current_cup = 0
@@ -87,7 +87,7 @@ if __name__ == '__main__':
     
     
     """
-    OS 2020-02-23: looks like `collections.deque` isn't good though. Do I need to write my own `LinkedList` object?
+    OS 2020-02-23: looks like `collections.deque` isn't good enough. Do I need to write my own `LinkedList` object?
     """
     game = CrabCups(INITIAL_CUP_ORDER, number_of_cups=1000000)
     order = game.play_game(10000000)

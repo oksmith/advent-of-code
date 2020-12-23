@@ -63,7 +63,7 @@ def count_visible_occupied_seats(padded_floor_plan, row_num, col_num):
     return counts['#'] 
 
 
-class SeatingSystem:
+class SeatingSystem(object):
     def __init__(self, initial_floor_plan):
         self.initial_floor_plan = np.array(initial_floor_plan)
         self.padded_floor_plan = pad_floor_plan(self.initial_floor_plan)
